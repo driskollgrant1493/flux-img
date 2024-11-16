@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技博客</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f0f1a;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            padding: 2rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #4ecca3;
+            margin: 0;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .blog-card {
+            background: #1a1a2e;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card h2 {
+            color: #4ecca3;
+            margin-top: 0;
+        }
+        
+        .blog-card p {
+            color: #eeeeee;
+            line-height: 1.6;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #4ecca3;
+            color: #0f0f1a;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="blog-title">科技创新博客</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="blog-grid">
+            <article class="blog-card">
+                <span class="tag">人工智能</span>
+                <span class="tag">深度学习</span>
+                <h2>人工智能的未来发展</h2>
+                <p>探讨AI技术的最新进展和未来发展方向，包括机器学习、深度学习等领域的突破性进展...</p>
+            </article>
+            
+            <article class="blog-card">
+                <span class="tag">区块链</span>
+                <span class="tag">加密货币</span>
+                <h2>区块链技术应用</h2>
+                <p>深入解析区块链技术的实际应用场景，探讨其在金融、供应链等领域的创新应用...</p>
+            </article>
+            
+            <article class="blog-card">
+                <span class="tag">云计算</span>
+                <span class="tag">技术架构</span>
+                <h2>云原生架构设计</h2>
+                <p>分享云原生应用开发的最佳实践，包括微服务架构、容器化部署等技术要点...</p>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
